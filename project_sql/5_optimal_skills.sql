@@ -32,7 +32,8 @@ from skills_demand
 inner join average_salary
     on skills_demand.skill_id = average_salary.skill_id
 where skills_demand.demand_count > 10
-order by average_salary.avg_salary desc, skills_demand.demand_count desc;
+order by average_salary.avg_salary desc, skills_demand.demand_count desc
+limit 25;
 
 /*<SQL_OUTPUT>
 {
@@ -186,78 +187,6 @@ order by average_salary.avg_salary desc, skills_demand.demand_count desc;
       "javascript",
       "20",
       "97587.00"
-    ],
-    [
-      183,
-      "power bi",
-      "110",
-      "97431.30"
-    ],
-    [
-      0,
-      "sql",
-      "398",
-      "97237.16"
-    ],
-    [
-      215,
-      "flow",
-      "28",
-      "97200.00"
-    ],
-    [
-      201,
-      "alteryx",
-      "17",
-      "94144.53"
-    ],
-    [
-      199,
-      "spss",
-      "24",
-      "92169.68"
-    ],
-    [
-      198,
-      "outlook",
-      "13",
-      "90077.42"
-    ],
-    [
-      22,
-      "vba",
-      "24",
-      "88783.29"
-    ],
-    [
-      196,
-      "powerpoint",
-      "58",
-      "88701.09"
-    ],
-    [
-      181,
-      "excel",
-      "256",
-      "87288.21"
-    ],
-    [
-      192,
-      "sheets",
-      "32",
-      "86087.79"
-    ],
-    [
-      188,
-      "word",
-      "48",
-      "82576.04"
-    ],
-    [
-      195,
-      "sharepoint",
-      "18",
-      "81633.58"
     ]
   ],
   "columns": [
@@ -267,9 +196,9 @@ order by average_salary.avg_salary desc, skills_demand.demand_count desc;
     "avg_salary"
   ],
   "info": {
-    "executionTime": "17:07:29",
+    "executionTime": "17:08:03",
     "executionDate": "2026-10-01",
-    "executionId": "1790845649579_m483jno",
+    "executionId": "1790845683420_xnmx3vk",
     "badgeKeywords": {
       "danger": [
         "🔴",
@@ -346,11 +275,11 @@ order by average_salary.avg_salary desc, skills_demand.demand_count desc;
     ]
   },
   "summary": {
-    "executionOrder": 102,
+    "executionOrder": 103,
     "success": true,
     "timing": {
-      "startTime": 1790845649119,
-      "endTime": 1790845649593
+      "startTime": 1790845683044,
+      "endTime": 1790845683447
     }
   }
 }
